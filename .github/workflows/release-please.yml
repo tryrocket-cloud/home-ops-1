@@ -1,6 +1,6 @@
 # https://github.com/marketplace/actions/release-please-action#release-types-supported
 
-name: Realse Please
+name: Release Please
 
 on:
   push:
