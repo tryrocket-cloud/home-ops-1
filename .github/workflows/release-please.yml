@@ -1,4 +1,5 @@
 # https://github.com/marketplace/actions/release-please-action#release-types-supported
+# https://github.com/googleapis/release-please
 
 name: Release Please
 
