@@ -76,3 +76,38 @@ override.tf.json
 # Ignore log files
 *.log
 
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ignore SSH keys, secrets, and credentials
+*.pem
+*.key
+*.crt
+*.env
+secrets.yaml
+
+# Ignore Kubernetes manifests created by tools (e.g., ArgoCD outputs)
+kustomize/build/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore Node.js dependencies (if applicable)
+node_modules/
+
+# Ignore Yarn cache
+.yarn/cache/
