@@ -1,6 +1,11 @@
-module "github_repo" {
-  source = "./modules/github"
+module "github_org" {
+  source = "./modules/github_org"
 
   github_token = var.github_token
-  github_owner = var.github_owner
+}
+
+module "github_user" {
+  source = "./modules/github_user"
+
+  github_token = var.github_token
 }

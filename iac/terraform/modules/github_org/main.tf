@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    github = {
+      source = "integrations/github"
+    }
+  }
+}
+
+provider "github" {
+  token = var.github_token # If you need to pass a token inside the module
+  owner = var.github_owner
+}
+
 resource "github_repository" "home_ops" {
   name        = "home-ops"
   description = "My home Kubernetes (Talos Linux) cluster managed by GitOps (ArgoCD) and Renovate"

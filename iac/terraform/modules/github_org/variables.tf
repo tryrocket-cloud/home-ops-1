@@ -6,4 +6,5 @@ variable "github_token" {
 variable "github_owner" {
   description = "GitHub username or organization"
   type        = string
+  default     = "tryrocket-cloud"
 }
