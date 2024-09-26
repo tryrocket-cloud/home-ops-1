@@ -12,13 +12,22 @@ provider "github" {
 }
 
 resource "github_repository" "home_ops" {
-  name        = "home-ops"
-  description = "My home Kubernetes (Talos Linux) cluster managed by GitOps (ArgoCD) and Renovate"
-  visibility  = "public"
+  name             = "home-ops"
+  description      = "My home Kubernetes (Talos Linux) cluster managed by GitOps (ArgoCD) and Renovate"
+  visibility       = "public"
+  homepage_url     = "https://tryrocket.cloud"
+  license_template = "wtfpl"
+
+  pages {
+    source {
+      branch = "main"
+      path   = "/docs"
+    }
+  }
 
   has_issues   = true
   has_wiki     = true
-  has_projects = true
+  has_projects = false
 
   allow_squash_merge = true
   allow_merge_commit = false
