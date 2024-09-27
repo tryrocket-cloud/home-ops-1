@@ -113,7 +113,7 @@ node_modules/
 .yarn/cache/
 
 
-docs/.vitepress/cache
-docs/.vitepress/dist
+**/.vitepress/cache
+**/.vitepress/dist
 
 **TODO*
