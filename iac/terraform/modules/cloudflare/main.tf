@@ -31,7 +31,7 @@ resource "cloudflare_pages_project" "docs" {
   build_config {
     build_command   = "npx vitepress build"
     destination_dir = ".vitepress/dist"
-    root_dir        = "/docs"
+    root_dir        = "/pages/docs"
   }
 }
 
