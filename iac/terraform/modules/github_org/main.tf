@@ -23,6 +23,8 @@ resource "github_repository" "home_ops" {
       branch = "main"
       path   = "/docs"
     }
+    cname      = "docs.tryrocket.cloud"
+    build_type = "workflow"
   }
 
   has_issues   = true
