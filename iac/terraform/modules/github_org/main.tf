@@ -19,17 +19,14 @@ resource "github_repository" "home_ops" {
   license_template = "wtfpl"
 
   pages {
-    source {
-      branch = "main"
-      path   = "/docs"
-    }
     cname      = "docs.tryrocket.cloud"
     build_type = "workflow"
   }
 
-  has_issues   = true
-  has_wiki     = true
-  has_projects = false
+  has_issues      = true
+  has_wiki        = false
+  has_projects    = false
+  has_discussions = false
 
   allow_squash_merge = true
   allow_merge_commit = false
