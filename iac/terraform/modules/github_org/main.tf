@@ -18,10 +18,10 @@ resource "github_repository" "home_ops" {
   homepage_url     = "https://tryrocket.cloud"
   license_template = "wtfpl"
 
-  pages {
-    cname      = "docs.tryrocket.cloud"
-    build_type = "workflow"
-  }
+  # pages {
+  #   cname      = "docs.tryrocket.cloud"
+  #   build_type = "workflow"
+  # }
 
   has_issues      = true
   has_wiki        = false
