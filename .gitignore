@@ -111,3 +111,7 @@ node_modules/
 
 # Ignore Yarn cache
 .yarn/cache/
+
+
+docs/.vitepress/cache
+docs/.vitepress/dist

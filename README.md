@@ -2,6 +2,10 @@
 
 <div align="center">
 
+<a href="https://docs.tryrocket.cloud">Dashboard</a> •
+<a href="https://docs.tryrocket.cloud">Docs</a>
+
+
 <img src="https://raw.githubusercontent.com/auricom/home-ops/main/docs/src/assets/logo.png" align="center" width="144px" height="144px"/>
 
 ## My home Kubernetes cluster :sailboat:

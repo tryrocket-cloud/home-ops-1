@@ -1,6 +1,7 @@
+mod docs
+mod github '.github/'
 mod iac
 mod k8s
-mod github '.github/'
 
 list:
   @just --list
