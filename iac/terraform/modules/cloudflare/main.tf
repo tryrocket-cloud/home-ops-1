@@ -23,7 +23,7 @@ resource "cloudflare_pages_project" "docs" {
     type = "github"
     config {
       owner                         = "tryrocket-cloud"
-      repo_name                     = "docs"
+      repo_name                     = "home-ops"
       production_branch             = "main"
       pr_comments_enabled           = false
       deployments_enabled           = true
@@ -34,7 +34,7 @@ resource "cloudflare_pages_project" "docs" {
   build_config {
     build_command   = "npx vitepress build"
     destination_dir = ".vitepress/dist"
-    root_dir        = ""
+    root_dir        = "pages/docs"
   }
 }
 
