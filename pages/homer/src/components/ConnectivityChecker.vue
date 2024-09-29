@@ -59,7 +59,7 @@ export default {
       const urlPath = window.location.pathname.replace(/\/+$/, "");
       const aliveCheckUrl = `${
         window.location.origin
-      }${urlPath}/index.html?t=${new Date().valueOf()}`;
+      }${urlPath}?t=${new Date().valueOf()}`;
       return fetch(aliveCheckUrl, {
         method: "HEAD",
         cache: "no-store",
