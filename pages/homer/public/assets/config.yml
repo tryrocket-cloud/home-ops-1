@@ -2,16 +2,25 @@
 # Homepage configuration
 # See https://fontawesome.com/v6/search for icons options
 
-title: 'Demo dashboard'
-subtitle: 'Homer'
+title: 'App dashboard'
+subtitle: 'tryrocket.cloud'
+documentTitle: Rocket Cloud
 logo: 'logo.png'
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+footer: false
+
+columns: '3'
+connectivityCheck: false
 
 # Optional theme customization
 theme: default
+
+# Set the default layout and color scheme
+defaults:
+  layout: columns # Either 'columns', or 'list'
+  colorTheme: auto # One of 'auto', 'light', or 'dark'
 
 # Optional theme customization (color overrrides)
 # overrrides can also be done using CSS vars
@@ -44,45 +53,110 @@ colors:
     link-hover: '#ffdd57'
 
 # Optional message
-message:
-  #url: https://b4bz.io
-  style: 'is-dark' # See https://bulma.io/documentation/components/message/#colors for styling options.
-  title: 'Demo !'
-  icon: 'fa fa-grin'
-  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+# message:
+#   #url: https://b4bz.io
+#   style: 'is-dark' # See https://bulma.io/documentation/components/message/#colors for styling options.
+#   title: 'Demo !'
+#   icon: 'fa fa-grin'
+#   content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: 'Contribute'
-    icon: 'fab fa-github'
-    url: 'https://github.com/bastienwirtz/homer'
-    target: '_blank' # optional html a tag target attribute
-  - name: 'Wiki'
-    icon: 'fas fa-book'
-    url: 'https://www.wikipedia.org/'
-  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  #- name: "another page!"
-  #  icon: "fas fa-file-alt"
-  #  url: "#additional-page"
+  - name: 'FAQ'
+    icon: 'fa-regular fa-circle-question'
+    url: 'https://faq.tryrocket.cloud/'
+    target: '_blank'
 
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+  - name: Rocket Cloud
+    icon: 'fab fa-github'
+    url: 'https://github.com/tryrocket-cloud/tryrocket-cloud'
+    target: '_blank'
+
+  - name: 'Developers Page'
+    icon: 'fab fa-dev'
+    url: '#dev-page'
+
 services:
-  - name: 'Applications'
-    icon: 'fas fa-cloud'
+  - name: 'Apps'
+    icon: 'fa-solid fa-rocket'
     items:
-      - name: 'Awesome app'
-        logo: 'assets/tools/sample.png'
-        subtitle: 'Bookmark example'
+      - name: 'Cinny'
+        logo: 'assets/icons-3/cinny.png'
+        subtitle: 'Matrix client'
         tag: 'app'
-        keywords: 'self hosted reddit'
-        url: 'https://www.reddit.com/r/selfhosted/'
-        target: '_blank' # optional html a tag target attribute
-      - name: 'Another one'
-        logo: 'assets/tools/sample2.png'
-        subtitle: 'Another application'
+        keywords: 'chat'
+        url: 'https://cinny.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Immich'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/immich.webp'
+        subtitle: 'High performance self-hosted photo and video management solution.'
         tag: 'app'
-        url: '#'
+        keywords: 'photo image'
+        url: 'https://immich.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Invidious'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/invidious.webp'
+        subtitle: 'Invidious is an alternative front-end to YouTube '
+        tag: 'app'
+        keywords: 'video youtube'
+        url: 'https://invidious.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Paperless'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/paperless-ngx.webp'
+        subtitle: 'index and archive all your physical documents'
+        tag: 'app'
+        keywords: 'paper dms document'
+        url: 'https://paperless.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Vaultwarden'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/vaultwarden.webp'
+        subtitle: 'Password manager'
+        tag: 'app'
+        keywords: 'password pass secret'
+        url: 'https://vaultwarden.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Linkding'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/linkding.webp'
+        subtitle: 'Self-hosted bookmark manager'
+        tag: 'app'
+        keywords: 'bookmark'
+        url: 'https://linkding.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Memos'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/memos.webp'
+        subtitle: 'A note-taking service'
+        tag: 'app'
+        keywords: 'note'
+        url: https://memos.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Vaultwarden (Admin)'
+        logo: 'https://raw.githubusercontent.com/NX211/homer-icons/master/png/vaultwarden.png'
+        subtitle: ''
+        tag: 'app'
+        keywords: 'password pass secret admin'
+        url: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/vaultwarden.webp'
+        target: '_blank'
+
+      - name: 'Vikunja'
+        logo: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/vikunja.webp'
+        subtitle: 'open-source, self-hostable to-do app'
+        tag: 'app'
+        keywords: 'todo'
+        url: 'https://vikunja.tryrocket.cloud'
+        target: '_blank'
+
+      - name: 'Davis'
+        logo: 'assets/icons-2/davis.png'
+        subtitle: 'Simple DAV server'
+        tag: 'contacts calendar'
+        keywords: 'dav caldav carddav'
+        url: 'https://davis.tryrocket.cloud/'
+        target: '_blank'
