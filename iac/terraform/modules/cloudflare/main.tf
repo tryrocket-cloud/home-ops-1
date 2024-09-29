@@ -28,6 +28,14 @@ resource "cloudflare_pages_project" "docs" {
       pr_comments_enabled           = false
       deployments_enabled           = true
       production_deployment_enabled = true
+
+      preview_deployment_setting = "none"
+
+      # Disable preview deployments by excluding all branches
+      #preview_branch_excludes = ["*"]
+
+      # Alternatively, set preview_branch_includes to an empty list
+      preview_branch_includes = []
     }
   }
 
@@ -71,6 +79,14 @@ resource "cloudflare_pages_project" "homer" {
       pr_comments_enabled           = false
       deployments_enabled           = true
       production_deployment_enabled = true
+
+      preview_deployment_setting = "none"
+
+      # Disable preview deployments by excluding all branches
+      #preview_branch_excludes = ["*"]
+
+      # Alternatively, set preview_branch_includes to an empty list
+      preview_branch_includes = []
     }
   }
 
