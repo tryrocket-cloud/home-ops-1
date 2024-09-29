@@ -66,7 +66,7 @@ resource "cloudflare_pages_project" "homer" {
     type = "github"
     config {
       owner                         = "tryrocket-cloud"
-      repo_name                     = "homer"
+      repo_name                     = "home-ops"
       production_branch             = "main"
       pr_comments_enabled           = false
       deployments_enabled           = true
@@ -77,7 +77,7 @@ resource "cloudflare_pages_project" "homer" {
   build_config {
     build_command   = "pnpm build"
     destination_dir = "dist/"
-    root_dir        = ""
+    root_dir        = "pages/homer"
   }
 }
 
