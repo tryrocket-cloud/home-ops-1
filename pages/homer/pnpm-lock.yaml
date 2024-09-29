@@ -25,34 +25,34 @@ importers:
         version: 2.4.5
     devDependencies:
       '@rushstack/eslint-patch':
-        specifier: ^1.10.2
+        specifier: 1.10.2
         version: 1.10.2
       '@vitejs/plugin-vue':
-        specifier: ^5.0.4
+        specifier: 5.0.4
         version: 5.0.4(vite@5.2.10(sass@1.76.0)(terser@5.34.1))(vue@3.4.31)
       '@vue/eslint-config-prettier':
-        specifier: ^9.0.0
+        specifier: 9.0.0
         version: 9.0.0(eslint@8.57.0)(prettier@3.2.5)
       eslint:
-        specifier: ^8.57.0
+        specifier: 8.57.0
         version: 8.57.0
       eslint-plugin-vue:
-        specifier: ^9.25.0
+        specifier: 9.25.0
         version: 9.25.0(eslint@8.57.0)
       http-server:
-        specifier: ^14.1.1
+        specifier: 14.1.1
         version: 14.1.1
       prettier:
-        specifier: ^3.2.5
+        specifier: 3.2.5
         version: 3.2.5
       sass:
-        specifier: ^1.76.0
+        specifier: 1.76.0
         version: 1.76.0
       vite:
-        specifier: ^5.2.10
+        specifier: 5.2.10
         version: 5.2.10(sass@1.76.0)(terser@5.34.1)
       vite-plugin-pwa:
-        specifier: ^0.20.0
+        specifier: 0.20.0
         version: 0.20.0(vite@5.2.10(sass@1.76.0)(terser@5.34.1))(workbox-build@7.1.0)(workbox-window@7.1.0)
 
 packages:
@@ -1069,11 +1069,6 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn@8.11.3:
-    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
   acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
     engines: {node: '>=0.4.0'}
@@ -1262,15 +1257,6 @@ packages:
 
   debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-
-  debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
-    engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
     peerDependenciesMeta:
@@ -1846,9 +1832,6 @@ packages:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
     hasBin: true
 
-  ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -1869,9 +1852,6 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
-
-  object-inspect@1.13.1:
-    resolution: {integrity: sha512-5qoj1RUiKOMsCCNLV1CBiPYE10sziTsnmNxkAI/rZhiD63CF7IqdFGC/XzjWjpSgLf0LxXX3bDFIh0E18f6UhQ==}
 
   object-inspect@1.13.2:
     resolution: {integrity: sha512-IRZSRuzJiynemAXPYtPe5BoI/RESNYR7TYm50MC5Mqbd3Jmw5y790sErYw3V6SryFJD64b74qQQs9wn5Bg/k3g==}
@@ -1922,9 +1902,6 @@ packages:
 
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
-
-  picocolors@1.0.0:
-    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
@@ -3303,7 +3280,7 @@ snapshots:
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.3.7
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -3321,7 +3298,7 @@ snapshots:
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.4
+      debug: 4.3.7
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3553,11 +3530,9 @@ snapshots:
 
   '@vue/shared@3.4.31': {}
 
-  acorn-jsx@5.3.2(acorn@8.11.3):
+  acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
-      acorn: 8.11.3
-
-  acorn@8.11.3: {}
+      acorn: 8.12.1
 
   acorn@8.12.1: {}
 
@@ -3773,10 +3748,6 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  debug@4.3.4:
-    dependencies:
-      ms: 2.1.2
-
   debug@4.3.7:
     dependencies:
       ms: 2.1.3
@@ -3959,7 +3930,7 @@ snapshots:
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.4
+      debug: 4.3.7
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.2.2
@@ -3991,8 +3962,8 @@ snapshots:
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.11.3
-      acorn-jsx: 5.3.2(acorn@8.11.3)
+      acorn: 8.12.1
+      acorn-jsx: 5.3.2(acorn@8.12.1)
       eslint-visitor-keys: 3.4.3
 
   esquery@1.5.0:
@@ -4412,8 +4383,6 @@ snapshots:
     dependencies:
       minimist: 1.2.8
 
-  ms@2.1.2: {}
-
   ms@2.1.3: {}
 
   nanoid@3.3.7: {}
@@ -4427,8 +4396,6 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
-
-  object-inspect@1.13.1: {}
 
   object-inspect@1.13.2: {}
 
@@ -4476,8 +4443,6 @@ snapshots:
 
   path-parse@1.0.7: {}
 
-  picocolors@1.0.0: {}
-
   picocolors@1.1.0: {}
 
   picomatch@2.3.1: {}
@@ -4500,7 +4465,7 @@ snapshots:
   postcss@8.4.38:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.0
+      picocolors: 1.1.0
       source-map-js: 1.2.0
 
   prelude-ls@1.2.1: {}
@@ -4675,7 +4640,7 @@ snapshots:
       call-bind: 1.0.7
       es-errors: 1.3.0
       get-intrinsic: 1.2.4
-      object-inspect: 1.13.1
+      object-inspect: 1.13.2
 
   smob@1.5.0: {}
 
@@ -4873,7 +4838,7 @@ snapshots:
 
   vite-plugin-pwa@0.20.0(vite@5.2.10(sass@1.76.0)(terser@5.34.1))(workbox-build@7.1.0)(workbox-window@7.1.0):
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.7
       fast-glob: 3.3.2
       pretty-bytes: 6.1.1
       vite: 5.2.10(sass@1.76.0)(terser@5.34.1)
@@ -4894,7 +4859,7 @@ snapshots:
 
   vue-eslint-parser@9.4.2(eslint@8.57.0):
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.7
       eslint: 8.57.0
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
