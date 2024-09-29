@@ -30,6 +30,16 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Applicaitons & Services',
+        items: [
+          { text: 'Docs (vitepress)', link: '/apps/docs' },
+          { text: 'Homer', link: '/apps/homer' },
+          { text: 'Status (upptime)', link: '/apps/status' },
+          { text: 'Vault', link: '/apps/vault' },
+          { text: 'Vaultwarden', link: '/apps/vaultwarden' },
+        ]
+      },
+      {
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
