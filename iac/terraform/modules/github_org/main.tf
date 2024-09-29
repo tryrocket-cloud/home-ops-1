@@ -59,26 +59,3 @@ resource "github_repository" "docs" {
   topics = ["docs", "vitepress"]
 }
 
-# resource "github_repository" "homer" {
-#   name             = "homer"
-#   description      = "Rocket Cloud startpage"
-#   visibility       = "public"
-#   homepage_url     = "https://tryrocket.cloud"
-#   license_template = "wtfpl"
-
-#   # pages {
-#   #   cname      = "docs.tryrocket.cloud"
-#   #   build_type = "workflow"
-#   # }
-
-#   has_issues      = true
-#   has_wiki        = false
-#   has_projects    = false
-#   has_discussions = false
-
-#   allow_squash_merge = true
-#   allow_merge_commit = false
-#   allow_rebase_merge = true
-
-#   topics = []
-# }
