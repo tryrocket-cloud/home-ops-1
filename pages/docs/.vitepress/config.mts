@@ -13,6 +13,23 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'How it works',
+        items: [
+          { text: 'Concepts', link: '/how-it-works' },
+        ]
+      },
+      {
+        text: 'Getting started',
+        items: [
+        ]
+      },
+      {
+        text: 'Development',
+        items: [
+          { text: 'Principles & Guidelines', link: '/principles-and-guidelines' },
+        ]
+      },
+      {
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
@@ -22,7 +39,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/tryrocket-cloud/home-ops' }
     ]
   }
 })
