@@ -1,0 +1,69 @@
+---
+- name: Get Vaultwarden server version
+  hosts: localhost
+  gather_facts: false
+  vars:
+    vaultwarden_server: '{{ VAULTWARDEN_SERVER }}' # Replace with actual server or pass as extra var
+
+    username: "{{ USERNAME }}"                      # Set via external variables or replace
+    password: "{{ PASSWORD }}"                      # Set via external variables or replace
+    vaultwarden_export_json: "{{ VAULTWARDEN_EXPORT_JSON }}"  # Path for exported JSON
+
+  tasks:
+    - name: Fetch Vaultwarden config
+      ansible.builtin.uri:
+        url: '{{ vaultwarden_server }}/api/config'
+        return_content: true
+        status_code: 200
+      register: response
+      failed_when: response.status != 200
+
+    - name: Parse and extract server version
+      ansible.builtin.set_fact:
+        server_version: "{{ response.json | json_query('server.version') }}"
+
+    - name: Debug output
+      ansible.builtin.debug:
+        var: server_version
+
+    - name: Set Bitwarden server
+      ansible.builtin.command:
+        cmd: bw config server "{{ vaultwarden_server }}"
+
+    - name: Log in to Bitwarden and export session token
+      ansible.builtin.command:
+        cmd: bw login "{{ username }}" "{{ password }}" --raw
+      register: bw_session
+      changed_when: false
+
+    - name: Export session token to environment variable
+      ansible.builtin.set_fact:
+        BW_SESSION: "{{ bw_session.stdout }}"
+
+    - name: Sync Bitwarden data
+      ansible.builtin.command:
+        cmd: bw sync
+      environment:
+        BW_SESSION: "{{ BW_SESSION }}"
+
+    - name: Export Vaultwarden data in JSON format
+      ansible.builtin.command:
+        cmd: bw export --format json --output "{{ vaultwarden_export_json }}"
+      environment:
+        BW_SESSION: "{{ BW_SESSION }}"
+
+    - name: Log out from Vaultwarden
+      ansible.builtin.command:
+        cmd: bw logout
+      environment:
+        BW_SESSION: "{{ BW_SESSION }}"
+
+    - name: Validate JSON content using Ansible's built-in filter
+      ansible.builtin.slurp:
+        path: "{{ vaultwarden_export_json }}"
+      register: json_file_content
+
+    - name: Parse and validate JSON
+      set_fact:
+        parsed_json: "{{ json_file_content.content | b64decode | from_json }}"
+      failed_when: parsed_json is not defined

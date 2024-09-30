@@ -1,0 +1,18 @@
+---
+- name: Playbook 2 - Use output from Playbook 1
+  hosts: localhost
+  gather_facts: no
+  vars:
+    number_from_playbook1: ""
+  tasks:
+    - name: Use the random number passed from Playbook 1
+      debug:
+        msg: "Using the number from Playbook 1: {{ number_from_playbook1 }}"
+
+    - name: Perform a task using the passed number (Simulated task)
+      ansible.builtin.command: "echo Processing number {{ number_from_playbook1 }}"
+      register: processed_output
+
+    - name: Display processed output
+      debug:
+        msg: "Processed output is: {{ processed_output.stdout }}"

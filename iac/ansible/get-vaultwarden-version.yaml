@@ -1,0 +1,23 @@
+---
+- name: Get Vaultwarden server version
+  hosts: localhost
+  gather_facts: false
+  vars:
+    vaultwarden_server: '{{ VAULTWARDEN_SERVER }}' # Replace with actual server or pass as extra var
+
+  tasks:
+    - name: Fetch Vaultwarden config
+      ansible.builtin.uri:
+        url: '{{ vaultwarden_server }}/api/config'
+        return_content: true
+        status_code: 200
+      register: response
+      failed_when: response.status != 200
+
+    - name: Parse and extract server version
+      ansible.builtin.set_fact:
+        server_version: "{{ response.json | json_query('server.version') }}"
+
+    - name: Debug output
+      ansible.builtin.debug:
+        var: server_version

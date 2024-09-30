@@ -1,0 +1,13 @@
+---
+- name: Get Vaultwarden server version
+  import_playbook: get-vaultwarden-version.yaml
+
+- name: Export Vaultwarden
+  import_playbook: export-vaultwarden.yaml
+
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Capture output from Playbook 1
+      set_fact:
+        server_version: "{{ server_version }}"
