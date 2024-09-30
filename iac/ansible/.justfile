@@ -2,5 +2,6 @@ list:
   @just --list
 
 # Hello
-hello:
-  @echo Hello World from Ansible Module
+vaultwarden-export:
+  @ansible-playbook vaultwarden-export-backup.yaml  -e "VAULTWARDEN_SERVER=https://vaultwarden.tryrocket.cloud"
+

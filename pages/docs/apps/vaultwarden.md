@@ -11,10 +11,7 @@ https://vaultwarden.tryrocket.cloud
 ### Export
 
 ```sh
-ansible-playbook vaultwarden-export-backup.yaml  -e "VAULTWARDEN_SERVER=https://vaultwarden.tryrocket.cloud"
-# or
-ansible-playbook vaultwarden-export-kopia.yaml -e "VAULTWARDEN_SERVER=https://vaultwarden.tryrocket.cloud"
-ansible-playbook vaultwarden-export-restic.yaml -e "VAULTWARDEN_SERVER=https://vaultwarden.tryrocket.cloud"
+j iac ansible vaultwarden-export
 ```
 
 Type: `critical`
