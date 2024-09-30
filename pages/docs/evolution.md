@@ -1,12 +1,4 @@
-# Getting started
-
-**home-ops:**
-  - [Dashoboard](https://tryrocket.cloud)
-  - [Documentation](https://docs.tryrocket.cloud)
-
-**upptime:**
-  - [Statuspage](https://status.tryrocket.cloud)
-
+# Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
 

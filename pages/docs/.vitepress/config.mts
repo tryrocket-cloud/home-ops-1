@@ -40,6 +40,13 @@ export default defineConfig({
         ]
       },
       {
+        text: '',
+        items: [
+          { text: 'Server rack', link: '/rack' },
+          { text: 'Evolution of the homelab', link: '/evolution' },
+        ]
+      },
+      {
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
