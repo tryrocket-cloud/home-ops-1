@@ -20,7 +20,6 @@ git subtree add --prefix=pages/homer homer main --squash
 ## Update
 
 ```sh
-git subtree add --prefix=pages/homer homer main --squas
-h
+git subtree pull --prefix=pages/homer homer main --squash
 ```
 
