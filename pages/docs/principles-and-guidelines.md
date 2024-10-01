@@ -21,3 +21,7 @@ Shared libraries and modules can be referenced directly within the same reposito
 **Streamlined Releases**
 
 Releasing updates is simplified when everything is in one repository. You can deploy new features or bug fixes across different services or modules in a single, coordinated release without the need for managing multiple repositories.
+
+## Services should always be turned off when not using
+
+Save energy

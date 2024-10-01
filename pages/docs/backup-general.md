@@ -3,6 +3,39 @@ outline: deep
 ---
 # Backup
 
+```mermaid
+gantt
+    title Snapshot & Backup
+    dateFormat  HH:mm
+    axisFormat  %H:%M
+
+    section Machines
+    Truenas (h610i)                 :   active, 00:00, 3h
+    ArgoCD SyncWindow deny          :   active, 00:00, 6h
+
+    section ZFS
+    Scub                            :   01:00, 1h
+
+    section Longhorn Snapshots
+    vaultwarden-data                :   00:10, 15m
+    davis-data                      :   00:10, 15m
+
+    section Longhorn Backups
+    vaultwarden-data                :   00:20, 15m
+    davis-data                      :   00:20, 15m
+
+    section restic
+    vaultwarden-ionos1              :   00:30, 15m
+    vaultwarden-ionos2              :   00:30, 15m
+    vaultwarden-hetzner             :   00:30, 15m
+    vaultwarden-tryrocketcloud (weekly)   :   00:30, 15m
+    davis-ionos1                    :   00:30, 15m
+    davis-ionos2                    :   00:30, 15m
+    davis-hetzner                   :   00:30, 15m
+    davis-tryrocketcloud (weekly)           :   00:30, 15m
+```
+
+
 **Strategy**
 
 3-2-1
