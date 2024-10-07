@@ -17,7 +17,8 @@ export default withMermaid(
       // https://vitepress.dev/reference/default-theme-config
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Getting started', link: '/getting-started' }
+        { text: 'Getting started', link: '/getting-started' },
+        { text: 'Applications', link: '/applications' }
       ],
 
       sidebar: [
