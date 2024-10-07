@@ -6,7 +6,7 @@ outline: deep
 
 ## 1. Servers
 
-![An image](./assets/dell-poweredge-r340.png)
+![An image](../assets/dell-poweredge-r340.png)
 
 ### Primary Server
 - **Model**: Dell PowerEdge T340
@@ -24,7 +24,7 @@ outline: deep
 ### Secondary Server (Optional)
 
 <!-- ![An image](./image.png) -->
-<img src="./assets/dell-optiplex-3080.png" alt="drawing" width="200"/>
+<img src="../assets/dell-optiplex-3080.png" alt="drawing" width="200"/>
 
 
 - **Model**: Intel NUC 10
@@ -64,7 +64,7 @@ outline: deep
 
 [Product Page](https://mikrotik.com/product/CRS326-24G-2SplusRM)
 
-![An image](./assets/mikrotik-csr326-24g-2s-rm.png)
+![An image](../assets/mikrotik-csr326-24g-2s-rm.png)
 
 | **Detail**                        | **Value**                       |
 |-----------------------------------|----------------------------------|
