@@ -21,3 +21,6 @@
 [![Renovate](https://img.shields.io/github/actions/workflow/status/auricom/home-ops/renovate.yaml?branch=main&label=&logo=renovatebot&style=for-the-badge&color=blue)](https://github.com/auricom/home-ops/actions/workflows/renovate.yaml)
 
 </div>
+
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Release Please](https://github.com/googleapis/release-please)
