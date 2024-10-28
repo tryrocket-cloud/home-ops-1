@@ -1,0 +1,30 @@
+title: My Home Page
+services:
+  Test:
+    - title: Home Assistant
+      description: Home automation
+      link: https://home-assistant.home.local/
+      icon:
+        url: 'https://cdn.jsdelivr.net/gh/selfhst/icons/webp/argo-cd.webp'
+        background: '#fff'
+        wrap: false
+      status:
+        enabled: true
+      tags:
+        - Home
+  Test2:
+    - title: NAS
+      description: Synology DS223
+      link: https://nas.home.local/
+      icon:
+        name: mdi:nas
+        wrap: true
+      status:
+        enabled: true
+      tags:
+        - Work
+tags:
+  - name: Home
+    color: green
+  - name: Work
+    color: blue
