@@ -1,4 +1,4 @@
-mod docs 'pages/docs'
+mod docs
 mod github '.github/'
 mod iac
 mod k8s
