@@ -10,6 +10,7 @@ outline: deep
 <!--@include: ./applications/faq.md-->
 <!--@include: ./applications/gitea.md-->
 <!--@include: ./applications/immich.md-->
+<!--@include: ../k8s/mafl/README.md-->
 <!--@include: ./applications/nextcloud.md-->
 <!--@include: ./applications/opengist.md-->
 <!--@include: ./applications/paperless-ngx.md-->
